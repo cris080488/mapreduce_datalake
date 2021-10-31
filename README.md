@@ -1,11 +1,11 @@
-# DIO-LiveCoding-AWS-BigData
+# AWS-BigData
 Repositório de cógido do Dio Live Coding com AWS EMR e Python
 Neste repositório há os arquivos de configuração e execução de análise de dados.
 
 ## Instruções
 
 * Acessar S3: https://s3.console.aws.amazon.com/s3/ 
-  * Criar estrutura de data lake : _dio-live-datalake_
+  * Criar estrutura de data lake : datalake_
   * Criar estrutura de pastas:
     * _data_
     * _output_
@@ -35,6 +35,6 @@ Neste repositório há os arquivos de configuração e execução de análise de
    * Upload de arquivo para o bucket
 * Ambiente virtual python: source venv_teste/bin/activate
   * _nano ~/.mrjob.conf_
-  * _python3 dio-live-wordcount-test.py -r emr s3://{your_s3_bucket_name}/data/SherlockHolmes.txt --output-dir=s3://{your_s3_bucket_name}/output/logs1 --cloud-tmp-dir=s3://{your_s3_bucket_name}/temp/_
+  * _python3 wordcount.py -r emr s3://{your_s3_bucket_name}/data/SherlockHolmes.txt --output-dir=s3://{your_s3_bucket_name}/output/logs1 --cloud-tmp-dir=s3://{your_s3_bucket_name}/temp/_
 
 
